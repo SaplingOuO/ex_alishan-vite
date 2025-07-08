@@ -111,12 +111,14 @@
         :style="{ transform: `translateY(-${currentIndex * 100}vh)` }"
         >
             <div :id="`${item.title}`" v-for="item in items" :key="item.title" 
-                    class="mh-100 bg-cover bg-center text-white d-flex justify-content-center align-items-center text-center"
+                    class="bg-cover bg-center text-white d-flex justify-content-center align-items-center text-center"
                     :style="{
                         backgroundImage: `url(${item.photo})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         height: '100vh',
+                        width: '100vw',
+
                     }
             ">
                 <div class="bg-dark bg-opacity-50 rounded">
